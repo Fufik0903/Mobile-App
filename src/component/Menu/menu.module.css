@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'GolosTextWebRegular';
+    src: url('../../assets/font/PT/PT/Golos-Text/Golos-Text_Regular.woff') format('woff2'),
+    url('../../assets/font/PT/PT/Golos-Text/Golos-Text_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: 'GolosTextWebRegular';
+    color: #151617;
+    width: 360px;
+    height: 100vh;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #C6D6E5;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "title"
+    "content"
+    "information";
+    animation: open 1s ease-in-out;
+
+}
+
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.back {
+    order: -1;
+    padding: 0 5px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.items img {
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 41px 30px;
+    align-items: baseline;
+}
+.prev_item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 41px 4px;
+    align-items: baseline;
+}
+.prev_item span{
+    flex-grow: 1;
+}
+.link {
+    text-decoration: none;
+    color: #151617;
+}
+
+.main_item span {
+    flex-grow: 1;
+}

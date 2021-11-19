@@ -1,0 +1,94 @@
+.container {
+    width: 180px;
+    height: 292px;
+    box-shadow: 0px 6px 10px rgba(116, 137, 155, 0.06), 0px 1px 18px rgba(116, 137, 155, 0.04), 0px 3px 5px rgba(116, 137, 155, 0.08);
+    border-radius: 2px;
+    position: absolute;
+    left: 20px;
+    top: 42px;
+    margin-left: 12px;
+    background: #ffffff;
+    animation: open 1s ease-in-out;
+}
+
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes close {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.nonActive {
+    position: absolute;
+    left: 20px;
+    top: 42px;
+    animation: close 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 0px;
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #151617;
+    padding: 8px 15px;
+    font-weight: 300;
+}
+
+li span {
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+li:hover {
+    background: #F1F8FE;
+}
+
+li:active {
+    background: #F1F8FE;
+}
+
+li:hover:after {
+    content: "";
+    padding-left: 15px;
+    background: url("../../../../assets/img/menu_img/icon_16x16_M_Tick.svg") no-repeat right;
+}
+
+.title {
+    padding: 14px 0 0 17px;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.tick {
+    justify-content: flex-end;
+}

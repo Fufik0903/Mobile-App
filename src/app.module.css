@@ -1,0 +1,36 @@
+html{
+    overflow-y: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 100vh;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #C6D6E5;
+    animation: close 1s ease-in-out;
+}
+
+.burger {
+    width: 80px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    border-radius: 50%;
+    border: none;
+    font-family: 'GolosTextWebRegular';
+    color: #ffffff;
+    background: #ca2121;
+}
+@keyframes close {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
